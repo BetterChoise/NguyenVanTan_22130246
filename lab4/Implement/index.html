@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body onload="renderStudentList()">
+    <div class="container" style="background-color:#1B1464;">
+        <div class="form_student">
+            <div class="studentInformation" style="background-color: royalblue; width: 290px; margin-left: 20px;">
+                <h3 style="text-align: center;">Thông tin sinh viên</h3>
+            </div>
+           
+            <label for="">MSSV <span class="double-dot">:</span> </label>
+            <input type="text" id="mssv"><br>
+            <span id="mssv-error" class="error"></span><br>
+    
+            <label for="">Họ và tên <span class="double-dot">:</span> </label>
+            <input type="text" id="fullname"><br>
+            <span id="fullname-error" class="error"></span><br>
+            
+            <label for="">Ngày sinh <span class="double-dot">:</span></label>
+            <input type="text" id="date"><br>
+            <span id="date-error" class="error"></span><br>
+           
+            <label for="">Địa chỉ <span class="double-dot">:</span></label>
+            <input type="text" id="address"><br>
+            <span id="address-error" class="error"></span><br>
+
+            <label for="">Email <span class="double-dot">:</span> </label>
+            <input type="text" id="email"><br>
+            <span id="email-error" class="error"></span><br>
+    
+            <label for="">Số điện thoại <span class="double-dot">:</span></label>
+            <input type="text" id="phone"><br>
+            <span id="phone-error" class="error"></span><br>
+
+            <label for="">CCCD <span class="double-dot">:</span></label>
+            <input type="text" id="cccd"><br>
+            <span id="cccd-error" class="error"></span><br>
+    
+            <label for="">Giới tính</label>
+            <input type="radio" name="gender" id="male" value="Nam" checked> Nam
+            <input type="radio" name="gender" id="female" value="Nữ"> Nữ
+            <input type="radio" name="gender" id="other" value="Khác"> Khác
+            <br>
+            <!-- <select name="gender" id="" style="width: 165px;">
+                    <option value="">Nam</option>
+                    <option value="">Nữ</option>
+            </select> -->
+
+            <label>&nbsp;</label>
+            <button style=" border: none; outline: none;" onclick="save()">Save</button>
+        </div>
+        <div class="list-student" id="list-student">
+            <div style="background-color: royalblue; text-align: center;"> <h3>Danh sách sinh viên</h3></div>
+               <div style="box-sizing: border-box; display: flex;"> 
+                <form action="" id="search-Box">
+                    <input type="text" id="search-text">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+                
+            <hr width="100%" size="3px" align="center" color="#0652DD">
+            <br>
+            <table id="grid-students">
+               
+            
+            </table>
+        </div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="java.js"></script>
+</body>
+</html>
