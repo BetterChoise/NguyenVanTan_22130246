@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1B1464;
+}
+h3{
+    margin: 10px;
+}
+.error{
+    color: red;
+}
+
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    background-color: royalblue;
+}
+.container .form_student{
+    max-height: 440px;
+}
+.container .form_student , .list-student{
+    width: 330px;
+    border: 1px solid #0652DD;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 10px;
+    float: left;
+}
+.container .form_student{
+    margin-right: 5px;
+}
+.container .form_student button{
+    border-radius: 3px;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    width: 100px;
+    background-color: royalblue;
+    font-weight: bold;
+    cursor :pointer ;
+}
+.container .form_student input[type="text"] {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 5px 5px;
+}
+.container .form_student input[type="radio"] {
+    margin-left: 5px;
+    cursor :pointer ;
+
+}
+.container .form_student label{
+    width: 120px;
+    float: left;
+    margin-left: 5px;
+}
+.container .form_student .double-dot{
+    font-weight: bolder;
+    float: right;
+    margin-right: 5px;
+
+}
+.container .form_student .error{
+    font-size: 12px;
+    margin-left:130px ;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+/* end student form  */
+
+.container .list-student{
+    width: 1000px;
+}
+.container .list-student table{
+    border: 1px solid #0652DD;
+    width: 1000px;
+    text-align: center;
+}
+.container .list-student td{
+    padding: 5px;
+    border: 1px solid #0652DD;
+}
+
+.container .list-student #search-text{
+    padding: 10px 15px;
+    font-size: 18px;
+    background: whitesmoke;
+    border-radius: 15px;
+    color: black;
+}
+.container .list-student #search-Box{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+.list-student #search-btn{
+    border: none;
+    background-color: royalblue;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 15px;
+}

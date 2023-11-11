@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    display: flex;
+    color: white;
+    height: 200px;
+    background: rgb(9,9,121);
+    background: linear-gradient(166deg, rgba(9,9,121,1) 16%, rgba(17,138,173,1) 100%);
+}
+.header img{
+    margin-left: 50px;
+    margin-right: 20px;
+    height: 180px;
+    border-radius: 50%;
+}
+.header .imgWrapper{
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    background: rgb(9,9,121);
+    background: linear-gradient(166deg, rgba(9,9,121,1) 16%, rgba(17,138,173,1) 100%);
+    width: 185px;
+    height: 200px;
+}
+.header .nameWrapper {
+    display: flex;
+    height: 200px;
+    margin: 5px;
+}
+.header .name{
+    margin-top: 60px;
+    width: 700px;
+    line-height: 25px;
+}
+/* end Header */
+/* start container */
+    
+
+/* nav-tab style */
+.nav-tabs{
+    margin-top: 120px;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    /* border-bottom: 3px solid #ddd; /* tạo đường kẻ */  
+    height: 60px;
+}
+.nav-tabs{
+    overflow: hidden;
+    float: right;
+    top: 0;
+}
+.nav-tabs li{
+    margin-right: 10px;
+    width: 100px;
+    text-align: center;
+}
+.nav-tabs li a{
+    display: block; 
+    padding: 6px 10px;
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+.nav-tabs li a::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    position:absolute;
+    left: 0px;
+    bottom: -3px;
+    background: transparent;
+}
+
+.nav-tabs li.active a::after, .nav-tabs li:hover a::after{ 
+    /* hover: khi di chuyển chuột vào  */
+    background: #e74c3c;
+}
+    /* tab-content style */
+
+.tab-content-item{
+    margin-top: 50px;
+}
+iframe{
+    width: 100%;
+}
