@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    position: relative;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 740px;
+    border: 1px solid black;
+}
+.header img{
+    width: 1200px;
+    height: 740px;
+}
+
+
+.header-background-cover-1,
+.header-background-cover-2,
+.header-background-cover-3,
+.header-background-cover-4
+{
+    height: 740px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.header-background-cover-1{
+    background-image: url(img/b85887987f2a134928d489b9ae446cee.jpg); 
+}
+.header-background-cover-2{
+    background-image: url(img/mircrosoft.png);
+}
+.header-background-cover-3{
+    background-image: url(img/asus-strix16.jpg);
+}
+.header-background-cover-4{
+    background-image: url(img/macbook.jpg);
+}
+.header-background-cover-1 ul,
+.header-background-cover-2 ul,
+.header-background-cover-3 ul,
+.header-background-cover-4 ul
+{
+    opacity: 0.5;
+    background: black;
+    height: 740px;
+}
+
+
+
+.nav-bar{
+    width: 100%;
+    z-index: 2;
+    top: 10px;
+    position: absolute;
+    height: 80px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+.nav-bar img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+.nav-bar ul{
+    display: flex;
+    margin-left: 65%;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-bar ul li{
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+.nav-bar ul li:hover {
+    background: #F6F1F1;
+    border-radius: 4px;
+    color: #19A7CE;
+}
+.nav-bar ul .log-in:hover{
+    background: transparent;
+}
+.fa-user{
+    position: relative;
+    right: 0;
+}
+.log-in{
+    display: flex;
+    flex-direction: column;
+}
+.log-in ul{
+    outline: none;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    width: 200px;
+    background-color: #11698E;
+    margin: 0;
+    top: 66px;
+    right: 50px;
+    flex-direction: column;
+    position: absolute;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform 0.2s ease;
+}
+.log-in:hover ul{
+    transform: scale(1);
+}
+.log-in:hover ul::after{
+    outline: none;
+    right: 0;
+    top: -12px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 12px solid #11698E;
+}
+.log-in ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* end header */
+
+/* start content */
+
+.content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    width: 90%;
+   
+}
+.item-1,.item-2{
+    position: relative;
+    height: 600px;
+    margin-top: 200px;
+	font-size: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+.see-more{
+    position: relative;
+    top: 250px;
+    left: 50%;
+	color: rgba(0,0,0,0.5);
+    transition: all .3 ease;
+}
+.see-more:hover {
+    color: #000000;
+}
+
+.promises-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promises{
+    width: 90%;
+    position: relative;
+    top: 270px;
+    margin-top: 100px;
+}
+.promises p{
+    font-size: 30px;
+    font-weight: 600;
+    user-select: none;
+}
+.promises-item{
+	background: rgba(0,0,0,0.03);
+    margin-top: 50px;
+    display: flex;
+}
+.promises-item img{
+    width: 60%;
+    height: 450px;
+}
+.promises-item ul{
+    margin-left: 5%;
+    width: 35%;
+}
+.promises ul li{
+    line-height: 40px;
+    margin-top: 20px;
+}
+.promises-item1{
+    transform: translateX(-200%);
+    transition: all 1s;
+}
+.promises-item.promises-item-active{
+    transform: translateX(0);
+}
+
+.backtop{
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+	background: rgba(0,0,0,0.5);
+    opacity: 0.3;
+    color: #000000;
+    border-radius: 3px;
+    transition: all .5s ease;
+}
+.backtop i{
+    margin: auto;
+}
+.backtop:hover{
+    z-index: 10000;
+    opacity: 1;
+    color: aliceblue;
+}
+/* end content */
+
+/* start footer */
+
+.footer{
+    margin-top: 400px;
+    height: 200px;
+    background-color: #11698E;
+}
