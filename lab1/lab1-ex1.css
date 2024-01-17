@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.workingSpace{
+    width: 100%;
+    
+}
+
+
+.header {
+    
+    height: 90px;
+    width: 80%;    
+    margin: 0px auto auto auto;
+    padding-bottom: 50px;
+    background-color: white;
+}
+.header .Left-header {
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.header .Left-header span {
+    line-height: 200px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.header .Left-header img{
+    top: 20px;
+    position: relative;
+}
+.header .Right-header {
+    width: 30%;
+    height: 100%;
+    float: right;
+    text-align: right;
+}
+.header .Right-header span {
+    line-height: 200px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.header .Right-header img{
+    position: relative;
+    top: 15px;
+}
+
+
+.container {
+    height: 80%;  
+    width: 80%;
+    margin: auto; 
+    background-image: url(image/background.jpg); 
+}
+.container img{
+    position: relative;
+    top: 50px;
+    left: 90px;
+}
+.container .content{
+    width: 60%;
+    height: 80%;
+    float: right;
+    position: relative;
+    top: 100px;
+    font-family: arial;
+    
+}
+.container .content p1{
+    line-height: 100px;
+    font-weight: 900;
+    font-size: 35px;
+}
+.container .content p2{
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    
+}
+.container .content p3{
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    line-height: 40px;
+}
+.container .content p4{
+    line-height: 40px;
+    color: white;
+}
+.container .content p5{
+    color: white;
+   
+}
+.container .content form{
+    padding: 35px 0px 0px 0px ;
+}
+.container .content input{
+    border-radius: 8px;
+    width: 265px;
+    height: 40px;
+    font-size: 15px;
+}
+.container .content button{
+    background-color: deeppink;
+    width: 175px;
+    height: 40px;
+    font-weight: 600;
+    color: white;
+}
+.container .footer{
+    text-align: center;
+    background-color: black;
+    height: 85px;
+    width: 100%;
+    color: white;
+}
+.container .footer img{
+    position: relative;
+    top: 50px;
+    left: -5px;   
+}
+.container .footer span{
+    position: relative;
+    top: 45px;
+    
+}
+
